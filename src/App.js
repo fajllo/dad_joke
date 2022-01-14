@@ -1,9 +1,11 @@
-import logo from "./logo.svg";
+import JokeList from "./JokeList";
+import JokeSidebar from "./JokeSidebar";
 
 function App() {
   return (
-    <div className="App">
-      <h1 className="text-orange-600"> dupa </h1>
+    <div className="App flex items-center justify-center h-screen w-screen bg-gradient-to-br from-teal-400  to-sky-500 font-source">
+      <JokeSidebar />
+      <JokeList />
     </div>
   );
 }
