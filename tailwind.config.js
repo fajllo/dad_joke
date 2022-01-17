@@ -5,6 +5,7 @@ module.exports = {
       fontFamily: {
         source: ['"Source Code Pro"'],
       },
+      colors: {},
     },
   },
   plugins: [],
