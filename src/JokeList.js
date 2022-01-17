@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 // window.localStorage.setItem("jokes", JSON.stringify(this.state.jokes))
 export default class JokeList extends Component {
   static defaultProps = {
-    numJokes: 2,
+    numJokes: 5,
   };
   state = {
     jokes: [],
@@ -31,7 +31,7 @@ export default class JokeList extends Component {
     });
     let newJoke = { joke: res.data.joke, vote: 0, id: uuidv4() };
 
-    this.setState({ jokes: [...this.state.jokes, newJoke] });
+    this.setState({ jokes: [newJoke, ...this.state.jokes] });
   };
 
   handleVote(id, delta) {

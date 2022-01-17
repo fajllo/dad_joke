@@ -1,5 +1,4 @@
 import JokeList from "./JokeList";
-import JokeSidebar from "./JokeSidebar";
 
 function App() {
   return (
