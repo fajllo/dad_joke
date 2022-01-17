@@ -35,11 +35,13 @@ export default class JokeList extends Component {
   };
 
   handleVote(id, delta) {
-    this.setState(prevSt => {
-      jokes: prevSt.jokes.map(joke => {
-        return joke.id === id ? console.log(joke.vote + delta) : { ...joke };
-      });
-    });
+    // this.setState(prevSt => {
+    //   jokes: prevSt.jokes.map(joke =>
+    //     joke.id === id ? { ...joke, vote: joke.vote + delta } : { ...joke }
+    //   );
+    // });
+    console.log(id, delta);
+
     //     this.setState(st => {
     //       jokes: st.jokes.map(j =>
     //         j.id === id ? { ...j, vote: j.vote + delta } : j
